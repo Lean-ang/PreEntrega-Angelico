@@ -161,7 +161,7 @@ class Carrito {
                 productosLS.splice(index,1);
             }
         });
-       //ARREGLO JSON
+       
         localStorage.setItem('producto', JSON.stringify(productosLS));
     }
 
@@ -169,7 +169,7 @@ class Carrito {
         localStorage.clear();
     }
 
-    //PROCESO DE PEDIDO
+    
     procesarPedido(e){
         e.preventDefault();
         console.log();

@@ -28,7 +28,7 @@ class Carrito {
         if(productosLS === infoProducto.id){
             Swal.fire({
                 type: 'info',
-                title: 'Oops...',
+                title: 'Algo anda mal',
                 text: 'El producto ya está agregado',
                 showConfirmButton: false,
                 timer: 1000
@@ -176,7 +176,7 @@ class Carrito {
         if(this.obtenerProductosLocalStorage().length === 0){            
                 Swal.fire({
                     type: 'error',
-                    title: 'Oops...',
+                    title: 'Algo anda mal..',
                     text: 'El carrito está vacío',
                     showConfirmButton: false,
                     timer: 2000
